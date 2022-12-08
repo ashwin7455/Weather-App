@@ -46,24 +46,24 @@
       </div>
     </nav>
 
-<!-- -------------------------container----------------------- -->
+<!-- -------------------------container--------------------------------->
 
 <div class="container py-3">
- 
+ <h1 class="my-4 text-center">Weather for Uttar Pradesh</h1>
   <main>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Free</h4>
+            <h4 class="my-0 fw-normal">Temperatures</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
+              <li>Temperature is <span id="temp"></span></li>
+              <li>min Temperature is <span id="min_temp"></span></li>
+              <li>max Temperature is <span id="temp"></span></li>
+              
             </ul>
             <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
           </div>
@@ -77,10 +77,10 @@
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
+              <li>Cloud PCT is <span id="cloud_pct"></span></li>
+              <li>Feels Like<span id="feels_like"></span></li>
+              <li>humidity is <span id="humidity"></span></li>
+
             </ul>
             <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
           </div>
@@ -94,10 +94,10 @@
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
+              <li>Wind Degree  is <span id="wind_degrees"></span></li>
+              <li>Wind Speed  is <span id="wind_speed"></span></li>
+              <li>Sunrise  Time is <span id="sunrise"></span></li>
+              <li>Sunset Time is <span id="sunset"></span></li>
             </ul>
             <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
           </div>
@@ -112,50 +112,107 @@
         <thead>
           <tr>
             <th style="width: 34%;"></th>
-            <th style="width: 22%;">Free</th>
-            <th style="width: 22%;">Pro</th>
-            <th style="width: 22%;">Enterprise</th>
+            <th style="width: 22%;">cloud_pct</th>
+            <th style="width: 22%;">feels_like</th>
+            <th style="width: 22%;">humidity</th>
+            <th style="width: 22%;">max_temp</th>
+            <th style="width: 22%;">min_temp</th>
+            <th style="width: 22%;">sunrise</th>
+            <th style="width: 22%;">sunset</th>
+            <th style="width: 22%;">temp</th>
+            <th style="width: 22%;">wind_degrees</th>
+            <th style="width: 22%;">wind_speed</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row" class="text-start">Public</th>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <th scope="row" class="text-start">Ghaziabad</th>
+            
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            
           </tr>
           <tr>
-            <th scope="row" class="text-start">Private</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <th scope="row" class="text-start">Bareilly</th>
+            
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
           </tr>
         </tbody>
 
         <tbody>
           <tr>
-            <th scope="row" class="text-start">Permissions</th>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <th scope="row" class="text-start">Mainpuri</th>
+            
+           <td>2</td>
+           <td>2</td>
+           <td>2</td>
+           <td>2</td>
+           <td>2</td>
+           <td>2</td>
+           <td>2</td>
+           <td>2</td>
+           <td>2</td>
+           <td>2</td>
           </tr>
           <tr>
-            <th scope="row" class="text-start">Sharing</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <th scope="row" class="text-start">Etawa</th>
+            
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
           </tr>
           <tr>
-            <th scope="row" class="text-start">Unlimited members</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <th scope="row" class="text-start">Etah</th>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
           </tr>
           <tr>
-            <th scope="row" class="text-start">Extra security</th>
-            <td></td>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <th scope="row" class="text-start">Mathura</th>
+            
+            
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
           </tr>
         </tbody>
       </table>
